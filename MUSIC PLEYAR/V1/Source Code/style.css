@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Carme&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Carme;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(224, 224, 224);
+}
+
+.music-Pleyar {
+    border-radius: 12px;
+    padding: 2rem 2.5rem;
+
+    width: 288px;
+    height: 388px;
+
+    margin-top: 4rem;
+    position: relative;
+
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 100) 0px 4px 12px;
+}
+
+.music-Pleyar::before {
+    content: '';
+    background: url(images/kk.png);
+    background-size: 110% 100%;
+    width: 288px;
+    height: 388px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -100;
+    opacity: 25%;
+    filter: blur(3px);
+
+}
+
+.p0::before {
+    background: url(images/1.png) !important;
+    background-size: 110% 100% !important;
+}
+
+.p1::before {
+    background: url(images/55.jpg) !important;
+    background-size: 110% 100% !important;
+}
+
+.p2::before {
+    background: url(images/66.jpg) !important;
+    background-size: 110% 100% !important;
+}
+
+.p3::before {
+    background: url(images/4.jpg) !important;
+    background-size: 110% 100% !important;
+}
+
+.p4::before {
+    background: url(images/5.jpg) !important;
+    background-size: 110% 100% !important;
+}
+
+.song-Img-Div {
+    display: flex;
+    justify-content: center;
+}
+
+.song-Img-Div img {
+    filter: brightness(80%);
+    border-radius: 22px;
+    height: 16.2rem;
+    width: 18.3rem;
+    position: relative;
+    margin: 1rem 0rem;
+}
+
+.text-Title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2.3rem 0rem;
+}
+
+.title {
+    display: flex;
+    flex-flow: column;
+    font-family: 'Barlow', sans-serif;
+
+}
+
+.s-Title {
+    font-size: 2rem;
+    width: 165px;
+    overflow: hidden;
+    font-family: 'Carme', sans-serif;
+}
+
+.s-artice {
+    width: 165px;
+    overflow: hidden;
+    font-size: 1.4rem;
+    opacity: 80%;
+}
+
+.like-Div svg {
+    width: 3rem;
+}
+
+.main-Buttens {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5rem;
+}
+
+.disnon {
+    display: none;
+}
+
+.icons svg {
+    width: 3.5rem;
+}
